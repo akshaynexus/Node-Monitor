@@ -2,13 +2,14 @@
 const RPC_CLIENT = require('bitcoin-rpc-promise')
 const express = require('express')
 const app = express()
+require('dotenv').config()
 
 /* Declare local variables */
 const auth = {
-  user: "user",
-  pass: "pass",
+  user: process.env.rpcusername,
+  pass: process.env.rpcpass,
   host: "localhost", /* Default Recommended */
-  port: 26211
+  port: 9796
 }
 
 let node = {
