@@ -6,7 +6,7 @@ require('dotenv').config()
 
 /* Declare local variables */
 const auth = {
-  user: process.env.rpcusername,
+  user: process.env.rpcuser,
   pass: process.env.rpcpass,
   host: "localhost", /* Default Recommended */
   port: 9796
